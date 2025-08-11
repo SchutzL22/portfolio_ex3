@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Schutz - Programador</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #sobre {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        #habilidades ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #habilidades li {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        #projetos .projeto {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        #contato form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contato input, #contato textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #contato button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #contato button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            #habilidades ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Schutz - Programador</h1>
+        <nav>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Eu sou Schutz, um programador apaixonado por tecnologia e desenvolvimento de software. Com experiência em várias linguagens de programação, eu crio soluções inovadoras e eficientes para problemas reais.</p>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>SQL</li>
+        </ul>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projeto">
+            <h3>Projeto 1: Aplicativo Web</h3>
+            <p>Descrição: Um aplicativo web desenvolvido com React e Node.js para gerenciar tarefas.</p>
+            <a href="https://exemplo.com/projeto1" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="projeto">
+            <h3>Projeto 2: Site E-commerce</h3>
+            <p>Descrição: Plataforma de e-commerce construída com HTML, CSS e JavaScript.</p>
+            <a href="https://exemplo.com/projeto2" target="_blank">Ver Projeto</a>
+        </div>
+        <!-- Adicione mais projetos conforme necessário -->
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="form-contato">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu Email" required>
+            <textarea placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Schutz. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // JavaScript opcional para o formulário de contato
+        document.getElementById('form-contato').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Mensagem enviada com sucesso! (Simulação)');
+            // Aqui você pode adicionar lógica real para enviar o formulário, como via API
+        });
+    </script>
+
+</body>
+</html>
